@@ -64,8 +64,8 @@ at runtime.
 
 | Path | Content |
 |---|---|
-| `/opt/nemeq/animas/<name>/<version>/` | installed animas (Zi): `anima.toml`, `skills/`, `knowledge/`, `style/`, `SIGNATURE` |
-| `/opt/nemeq/bodies/templates/<name>/` | body templates (Su): `su.toml`, `structure/`, `base-knowledge/`, `SIGNATURE` |
+| <code>/opt/nemeq/animas/&lt;name&gt;/&lt;version&gt;/</code> | installed animas (Zi): `anima.toml`, `skills/`, `knowledge/`, `style/`, `SIGNATURE` |
+| <code>/opt/nemeq/bodies/templates/&lt;name&gt;/</code> | body templates (Su): `su.toml`, `structure/`, `base-knowledge/`, `SIGNATURE` |
 
 Removal and reinstallation go through `massaru remove` and 
 `massaru install`. Nothing writes here except the observer.
@@ -93,22 +93,22 @@ All three live under `/var/nemeq`, but follow different contracts:
 ## Anima, body, embodiment
 
 - An **anima** (Zi) is installed read-only under 
-  `/opt/nemeq/animas/<name>/<version>/`.
+  <code>/opt/nemeq/animas/&lt;name&gt;/&lt;version&gt;/</code>.
 - A **body** (Su) is a template under 
-  `/opt/nemeq/bodies/templates/<name>/` plus an instance under 
-  `/var/nemeq/bodies/instances/<id>/`.
+  <code>/opt/nemeq/bodies/templates/&lt;name&gt;/</code> plus an instance under 
+  <code>/var/nemeq/bodies/instances/&lt;id&gt;/</code>.
 - An **embodiment** (Tush) is the life of an anima in one body, under 
-  `/var/nemeq/embodiments/<id>/`. It holds `tush.toml` 
+  <code>/var/nemeq/embodiments/&lt;id&gt;/</code>. It holds `tush.toml` 
   (with `shanu_count` and stats), `work/` (ephemeral), 
   and `shanu.log` (append-only log of runs).
 - An **incarnation** (Shanu) is one run. It starts by mounting the 
   anima read-only and the anima memory as an overlay; it ends with an 
   automatic commit of anima memory (Zikru Zi) and body memory (Zikru Su).
 - **Anima memory** (Zikru Zi) lives under 
-  `/var/nemeq/zikru-zi/<name>@<version>/` and is committable — it 
+  <code>/var/nemeq/zikru-zi/&lt;name&gt;@&lt;version&gt;/</code> and is committable — it 
   can be exported as a new anima with memory.
 - **Body memory** (Zikru Su) lives under 
-  `/var/nemeq/bodies/instances/<id>/zikru-su/` and never leaves 
+  <code>/var/nemeq/bodies/instances/&lt;id&gt;/zikru-su/</code> and never leaves 
   the installation.
 
 ## Riksu (manifest)
