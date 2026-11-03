@@ -8,8 +8,8 @@ Quoriosity that makes agents verifiable.
 
 ## Documents
 
-- [00 Glossary](00-glossary.md) — key terms, English and Sumero-Akkadian
-- [01 NEMEQ expansion](01-nemeq-expansion.md) — official definition, v1.0
+- [00 Glossary](00-glossary.md) — key terms
+- [01 NEMEQ expansion](01-nemeq-expansion.md) — official definition
 - [02 Architecture](02-architecture.md) — kernel, agents, zones
 - [03 Quoriosity](03-quoriosity.md) — verification principle and its rules
 
