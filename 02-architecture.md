@@ -112,7 +112,7 @@ is called an incarnation (Tush)**. The path is the only place where the word
   lives and contains many days and sleeps. It holds `tush.toml`
   (`days_count`, a read-only mirror of `incarnations_count`, and a reference
   to the anima), `work/` (ephemeral), and `days.log` (append-only log of
-  awakenings, formerly `shanu.log`).
+  awakenings).
 - **Anima memory** (Zikru Zi) lives under
   <code>/var/nemeq/zikru-zi/&lt;name&gt;@&lt;version&gt;/</code> and is
   committable — it can be exported as a new anima with memory.
